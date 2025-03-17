@@ -1,12 +1,12 @@
-from flask import Flask ,jsonify ,request
 import os
+from typing import Annotated
+
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 from langchain_groq import ChatGroq
-from typing import Annotated
-from typing_extensions import TypedDict
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
-
+from typing_extensions import TypedDict
 
 LANGSMITH_API_KEY = os.getenv("langsmith_key")
 GROQ_API_KEY = os.getenv("groq_key")
