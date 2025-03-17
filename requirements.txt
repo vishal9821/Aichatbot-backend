@@ -2,7 +2,4 @@ flask
 flask_cors
 gunicorn
 langchain_groq
-typing
-typing_extensions
-langgraph.graph
-langgraph.graph.message
+langgraph
